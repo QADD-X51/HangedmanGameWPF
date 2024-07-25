@@ -1,0 +1,15 @@
+Desk
+Carpet
+Chair
+Sofa
+Sink
+Toilet
+Stool
+Drawer
+Bookcase
+Shelf
+Bed
+Mattress
+Pillow
+Clock
+Lamp

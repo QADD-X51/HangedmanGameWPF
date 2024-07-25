@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="HangmanGame.MainGame"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HangmanGame"
+             xmlns:vm="clr-namespace:HangmanGame.Service"
+             mc:Ignorable="d"
+             d:DesignHeight="525" d:DesignWidth="950">
+    <UserControl.Resources>
+        <vm:Game x:Key="game"></vm:Game>
+    </UserControl.Resources>
+    <Grid x:Name="MainGameGrid">
+        <Image x:Name="DoomFace" Width="256" Source="{Binding Face.ImageDisplayed, UpdateSourceTrigger=PropertyChanged}" Margin="56,95,638,138"/>
+        <Grid Margin="362,157,25,157">
+            <Button x:Name="QButton" Content="Q" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="Q" Margin="10,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="18"/>
+            <Button x:Name="WButton" Content="W" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="W" Margin="63,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="EButton" Content="E" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="E" Margin="119,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="RButton" Content="R" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="R" Margin="177,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="TButton" Content="T" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="T" Margin="233,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="YButton" Content="Y" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="Y" Margin="286,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="UButton" Content="U" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="U" Margin="341,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="IButton" Content="I" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="I" Margin="393,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="OButton" Content="O" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="O" Margin="447,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="PButton" Content="P" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="P" Margin="501,22,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="AButton" Content="A" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="A" Margin="37,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="SButton" Content="S" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="S" Margin="91,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="DButton" Content="D" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="D" Margin="148,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="FButton" Content="F" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="F" Margin="205,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="GButton" Content="G" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="G" Margin="260,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="HButton" Content="H" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="H" Margin="314,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="JButton" Content="J" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="J" Margin="367,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="KButton" Content="K" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="K" Margin="420,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="LButton" Content="L" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="L" Margin="474,74,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="ZButton" Content="Z" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="Z" Margin="91,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="XButton" Content="X" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="X" Margin="148,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="CButton" Content="C" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="C" Margin="205,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="VButton" Content="V" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="V" Margin="260,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="BButton" Content="B" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="B" Margin="314,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="NButton" Content="N" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="N" Margin="367,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+            <Button x:Name="MButton" Content="M" HorizontalAlignment="Left" Command="{Binding CheckLetter}" CommandParameter="M" Margin="420,125,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="20"/>
+
+        </Grid>
+        <Label Content="Word:" HorizontalAlignment="Left" Margin="33,413,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Stencil"/>
+        <Label Name="WordLabel" Content="{Binding CurrentDisplayedWord, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="123,413,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Stencil" Width="802"/>
+        <Label x:Name="TimeLabel" Content="Time:" HorizontalAlignment="Left" Margin="33,442,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Stencil" Visibility="Hidden"/>
+        <Label x:Name="SecondsLabel" Content="{Binding SecondsLeft, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="123,442,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Stencil" Height="38" Width="802" Visibility="Hidden"/>
+
+    </Grid>
+</UserControl>

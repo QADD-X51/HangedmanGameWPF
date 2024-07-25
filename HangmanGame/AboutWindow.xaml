@@ -1,0 +1,16 @@
+﻿<Window x:Class="HangmanGame.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangmanGame"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="About Window" Height="183.673" Width="350">
+    <Grid Background="#FF2B3C76">
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="10,10,0,0" TextWrapping="Wrap" Text="Name: Viju Tudor-Alexandru" VerticalAlignment="Top" Width="270" Foreground="White" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="10,53,0,0" TextWrapping="Wrap" Text="Group: 10LF303" VerticalAlignment="Top" Width="270" Foreground="White" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="10,96,0,0" TextWrapping="Wrap" Text="Specialty: Applied Informatics" VerticalAlignment="Top" Width="270" Foreground="White" FontSize="20"/>
+
+    </Grid>
+</Window>
